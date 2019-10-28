@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { UsersComponent } from './pages/users/users.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
+import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 
 
 
@@ -16,7 +17,8 @@ import { TasksComponent } from './pages/tasks/tasks.component';
     LoginComponent,
     UsersComponent,
     ProjectsComponent,
-    TasksComponent
+    TasksComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

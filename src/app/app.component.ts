@@ -9,19 +9,23 @@ import { LoginComponent } from './pages/login/login.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
-  rootPage=LoginComponent;
+  rootPage = LoginComponent;
+  public login = false;
 
-  constructor(private loginService:LoginService){
+  constructor(private loginService: LoginService) {
 
   }
   ngOnInit() {
-    throw new Error("Method not implemented.");
+    this.checkLogin();
   }
-  title = 'client';
 
-  
+  checkLogin() {
+    this.loginService.getStorageLoginState(LOCAL_STORAGE_LOGGED_USER_REFERENCE) === 'true' ? this.login = true : this.login = false;
+  }
+
+
 
 
 
