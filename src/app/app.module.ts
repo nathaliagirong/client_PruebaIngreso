@@ -8,6 +8,7 @@ import { UsersComponent } from './pages/users/users.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { TasksComponent } from './pages/tasks/tasks.component';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -23,6 +24,7 @@ import { NavBarComponent } from './core/nav-bar/nav-bar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
